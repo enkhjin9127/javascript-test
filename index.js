@@ -146,7 +146,7 @@
 // }
 // console.log("smallest:", smallest);
 
-// p20
+// p20;
 // console.log("p20");
 // let p20n1 = 85;
 // p20n2 = 75;
@@ -316,22 +316,22 @@
 //   console.log("NO");
 // }
 
-// p30
+// p30;
 // console.log("IOI");
 
-// p31
+// p31;
 // let i;
 // for (i = 0; i < 3; i++) {
 //   console.log("IOI");
 // }
 
-// p32
-// let N = 4;
+// p32;
+// let N = prompt(Number);
 // for (let i = 0; i < N; i++) {
 //   console.log("IOI");
 // }
 
-// p33
+// p33;
 // let N = prompt(Number);
 // bak = 1;
 // for (let i = 1; i <= N; i++) {
@@ -339,7 +339,7 @@
 // }
 // console.log(bak);
 
-// p34
+// p34;
 // let N = prompt(Number);
 // answer = 0;
 // for (let i = 1; i <= N; i++) {
@@ -347,7 +347,7 @@
 // }
 // console.log(answer);
 
-// p35
+// p35;
 // let loop = prompt(Number);
 // answer = 0;
 // for (let i = 1; i <= loop; i++) {
@@ -355,7 +355,7 @@
 // }
 // console.log(answer);
 
-// p36
+// p36;
 // let pow = prompt(Number);
 // num = 1;
 // for (let i = 1; i <= pow; i++) {
@@ -363,7 +363,7 @@
 // }
 // console.log(num);
 
-// p37
+// p37;
 // let num = prompt(Number);
 // pow = prompt(Number);
 // answer = 1;
@@ -372,15 +372,26 @@
 // }
 // console.log(answer);
 
-// p38
-// let num = prompt(Number);
-// if (num >= 3) {
-//   console.log("tentssen");
-// } else {
-//   console.log("unasan");
-// }
+// p38;
+let num = Number(prompt("Enter a number:"));
+switch (num) {
+  case 2:
+    console.log("unasan");
+    break;
+  case 3:
+    console.log("unasan");
+    break;
+  case 4:
+    console.log("tentssen");
+    break;
+  case 5:
+    console.log("tentssen");
+    break;
+  default:
+    console.log("Error");
+}
 
-// p39
+// p39;
 // let dun = 5;
 // switch (dun) {
 //   case 2:
@@ -399,7 +410,7 @@
 //     console.log("error");
 // }
 
-// p40
+// p40;
 // let dun = 84;
 // if (dun < 59) {
 //   console.log("F");
@@ -413,7 +424,7 @@
 //   console.log("A");
 // }
 
-// p41
+// p41;
 // let day = 1;
 // switch (day) {
 //   case 0:
@@ -447,7 +458,7 @@
 //     console.log("error");
 // }
 
-// p42
+// p42;
 // let seasons = 12;
 // switch (seasons) {
 //   case 1:
@@ -474,7 +485,7 @@
 //     console.log("error");
 // }
 
-// p43
+// p43;
 // let a = 3;
 // b = 4;
 // c = 5;
@@ -484,14 +495,14 @@
 //   console.log("gurvaljin bolohgui");
 // }
 
-// p44
+// p44;
 // let a = 3;
 // n = 10;
 // for (let i = 1; i <= n; i++) {
-//   console.log(a, "*", i, "=", a * i);
+//   console.log(a + " * " + i + " = " + a * i);
 // }
 
-// p45
+// p45;
 // let num = prompt(Number);
 // pow = prompt(Number);
 // answer = 1;
@@ -499,9 +510,119 @@
 //   console.log(num, "^", i, "=", (answer *= num));
 // }
 
-// p46
+// p46;
 // let b = prompt(Number);
 // c = prompt(Number);
 // d = prompt(Number);
 // a = b * c - d;
 // console.log(a);
+
+// TEAMS BODLOGO ----------------------------------------------------------------------------------------
+// 1. Өгөгдсөн тоонд өгөгдсөн цифр хэдэн удаа орсныг ол.
+// Input: Нэг мөрөнд бүхэл тоо ба цифр зайгаар тусгаарлагдан өгөгдөнө.
+// Output: Цифр хэдэн удаа орсон тоо.
+
+// Example
+// Input:
+// 23453 3
+
+// Output:
+// 2
+// let a = prompt(Number);
+// b = prompt(Number);
+// c = 0;
+
+// for (let i = 0; a > 0; i++) {
+//   if (a % 10 == b) {
+//     c++;
+//   }
+//   a = Math.floor(a / 10);
+// }
+// console.log(c);
+
+// --------------------------------------------------------------------------------------------------------
+// 2. Өгөгдсөн хоёр натурал тооны хамгийн их ерөнхий хуваагчийг ол.
+// Input: Нэг мөрөнд хоёр натурал тоо нэг зайгаар тусгаарлагдан өгөгдөнө.
+// Output: ХИЕХ
+
+// Example
+// Input:
+// 9 15
+
+// Output:
+// 3
+
+// let a = prompt(Number);
+// b = prompt(Number);
+
+// for (let i = 0; a > 0 && b > 0; i++) {
+//   if (a > b) {
+//     a = a % b;
+//   } else {
+//     b = b % a;
+//   }
+// }
+
+// if (a > b) {
+//   console.log(a);
+// } else {
+//   console.log(b);
+// }
+
+// --------------------------------------------------------------------------------------------------------
+// 3. Элсэлтийн ерөнхий шалгалтын (ЭЕШ) математикийн дүнг сурагчдын хувийн дугаараар нь жагсаан гаргасан байгаа.
+// Өндөр оноотой сурагчдыг эхэнд нь жагсааж бич. Оноо тэнцсэн тохиолдолд хувийн дугаар багатайг нь эхэнд нь жагсаана.
+// Сурагчдын хувийн дугаар 1, 2, 3, гэх мэтээр үргэлжлэн олгогдсон байгаа.
+
+// Input: Сурагчдын оноо хувийн дугаарын дагуу нэг багана үүсгэн жагссан байгаа.
+// Мөр бүрт нэг сурагчийн оноо. Сурагчдын нийт тоо 1000-аас бага. Сурачдын оноо нь 0-оос 100 хүртэлх бүхэл тоогоор дүгнэгдэнэ.
+// Output: Өндөр оноогоор нь нэг багана болгосон жагсаалт. Оноо тэнцсэн сурагчдын хувийн дугаар багатай нь эхэлж жагсана.
+
+// Example
+// Input:
+// 40
+// 50
+// 92
+// 50
+// 40
+
+// Output:
+// 3
+// 2
+// 4
+// 1
+// 5
+// function sortStudents(scores) {
+//   const students = scores.map((score, index) => ({
+//     id: index + 1,
+//     score: score,
+//   }));
+
+//   students.sort((a, b) => {
+//     if (b.score === a.score) {
+//       return a.id - b.id;
+//     }
+//     return b.score - a.score;
+//   });
+
+//   return students.map((student) => student.id);
+// }
+
+// const scores = [20, 50, 92, 50, 40];
+
+// console.log(sortStudents(scores));
+// console.log(scores);
+// console.log("1" + 1);
+
+// 4. Өгөгдсөн тоо палиндром бол YES үгүй бол NO гэж хэвлэ. Палиндром тоо гэдэг нь тонгорогсон тоотойгоо тэнцүү тоог хэлнэ.
+
+// Input: Бүхэл тоо өгөгдөнө.
+
+// Output: Палиндром бол YES үгүй бол NO гэж хэвлэ.
+
+// Example
+// Input:
+// 12321
+
+// Output:
+// YES
